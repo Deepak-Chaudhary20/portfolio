@@ -92,6 +92,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .first_section{
+        margin-top: 2rem;
+    }
     .main_right_section {
         width: 300px;
         font-size: 1.1rem;
