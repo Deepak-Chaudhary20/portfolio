@@ -1,0 +1,99 @@
+ .second_section {
+     display: flex;
+     justify-content: flex-start;
+     padding: 0;
+     position: relative;
+     margin: 0;
+     /* overflow: hidden; */
+     width: 100%;
+     height: auto;
+     text-align: left;
+     border: 1px solid lightgrey;
+     box-shadow: 1px 1px 20px rgb(233, 232, 232);
+     padding: 23px;
+     border-radius: 20px;
+     font-size: 1.2rem;
+     font-weight: 900;
+     align-items: flex-start;
+ }
+
+ .third_section {
+     display: flex;
+     justify-content: flex-start;
+     padding: 0;
+     position: relative;
+     margin: 0;
+     width: 100%;
+     height: auto;
+     text-align: left;
+     padding: 23px;
+     border-radius: 20px;
+     font-size: 1.2rem;
+     font-weight: 900;
+     align-items: flex-start;
+ }
+
+ .know_more_about_me {
+     position: absolute;
+     top: -4%;
+     left: -2%;
+     background-color: black;
+     padding: 10px;
+     border-radius: 10px;
+     color: white;
+     animation: rotateAndBack infinite 5s forwards 2s;
+     /* Added animation */
+ }
+
+ @keyframes rotateAndBack {
+     0% {
+         transform: translateX(300%);
+     }
+
+     50% {
+         transform: rotate(-30deg);
+         transform-origin: left;
+     }
+
+     100% {
+         transform: rotate(0);
+         transform-origin: left;
+     }
+ }
+
+ .interviewer {
+     border: 1px solid lightgrey;
+     padding: 15px;
+     box-shadow: inset 2px 2px 30px #f0f0f0;
+     border-radius: 34px;
+ }
+
+ .iv {
+     height: 50px;
+     width: 50px;
+     padding: 15px;
+     margin-top: 4%;
+     margin-right: 0.7rem;
+     box-shadow: inset 2px 2px 20px #9bd4d7;
+     text-align: center;
+     border: 2px solid black;
+     border-radius: 50%;
+ }
+
+ .deepak {
+     display: flex;
+     align-items: flex-end;
+     flex-direction: row-reverse;
+ }
+
+ .de img {
+     border-radius: 50%;
+     margin-left: 0.7rem;
+ }
+ .typed_name2{
+    color: orangered;
+
+ }
+ .third_section{
+    
+ }

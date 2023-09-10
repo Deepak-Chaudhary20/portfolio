@@ -1,0 +1,325 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* font-family: 'Kanit', sans-serif; */
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+  .left-section {
+      height: 100vh;
+      width: 20%;
+      padding: 3%;
+      position: fixed;
+      flex-direction: column;
+      display: flex;
+      /* border-right: 3px solid rgb(255, 82, 20, 0.1); */
+      /* box-shadow: 1px 0px 10px rgba(247, 81, 21, 0.3); */
+      /* animation: glow 1s infinite ease-in-out; */
+      box-shadow: 12px 12px 20px rgba(255, 211, 195, 0.5);
+      transform: translateX(0);
+    }
+    
+    
+    .left-section:hover {
+        transform: translateX(3%);
+    }
+    
+    @keyframes glow {
+        0% {
+            box-shadow: 12px 12px 50px rgba(255, 211, 195, 0.2);
+        }
+  
+        50% {
+            box-shadow: 13px 12px 50px rgba(252, 64, 246, 0.3);
+        }
+  
+        75% {
+            box-shadow: 13px 10px 50px rgba(21, 240, 247, 0.3);
+        }
+  
+        100% {
+            box-shadow: 0 0 20px rgba(243, 211, 53, 0.9);
+        }
+    } 
+
+  .left-section img {
+      height: 150px;
+      border-radius: 50%;
+      width: 150px;
+      align-self: center;
+  }
+
+  .nav {
+      display: flex;
+      flex-direction: column;
+      padding: 3%;
+      flex-direction: flex-start;
+      margin-top: 2.5rem;
+  }
+
+  .nav a {
+      margin: 0.5rem;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: black;
+  }
+
+  .nav a span:hover {
+      border: 1px solid rgb(228, 228, 228);
+      padding: 4px;
+      border-radius: 14px;
+      color: orangered;
+      box-shadow: inset 4px 4px 15px 0 #00000018;
+  }
+
+  .nav a i {
+      color: #ff2e00;
+      margin-right: 1rem;
+      ;
+  }
+
+  .social a {
+      font-size: 40px;
+      color: black;
+      margin: 0.3rem;
+  }
+
+  .social a i {
+      margin-left: 0.7rem;
+      text-shadow: 2px 1px red;
+  }
+
+  .social a i:hover {
+      transform: scale(1.3);
+  }
+
+  .right-section {
+      padding: 5%;
+      margin-left: 20%;
+      position: relative;
+      width: 100%;
+  }
+
+
+  .hire_me {
+      position: fixed;
+      top: 2.4%;
+      background-color: #ff2e00;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+      z-index: 100;
+      border-radius: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-shadow: 4px 3px 20px rgb(252, 93, 35, 0.5);
+      right: 3%;
+  }
+
+  .hire_me:hover {
+      transform: scale(1.2);
+  }
+
+  .hire_me::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 80%;
+      left: -1%;
+      top: 50%;
+      background-color: white;
+
+  }
+
+  .right-section {
+      display: flex;overflow: hidden;
+
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .first_section {
+      height: 90vh;
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      align-items: center;
+  }
+
+  .main_right_section {
+      border: 2px solid rgb(183, 183, 183);
+      padding: 30px;
+      font-size: 1.6rem;
+      background-color: white;
+      position: relative;
+      font-weight: bold;
+      position: relative;
+      border-radius: 30px;
+      color: black
+  }
+
+  .profile_view {
+      margin-left: 20px;
+  }
+
+  .profile_name {
+      color: #ff2e00;
+  }
+
+  #typedeffect {
+      position: relative;
+      width: 430px;
+      height: 120px;
+      font-weight: 900;
+  }
+
+  .muted {
+      color: lightgrey;
+      margin-left: 1rem;
+      margin-right: 0.3rem
+  }
+
+  .typed_name {
+      color: #ff5c00;
+  }
+
+  .first_muted {
+      color: lightgrey;
+  }
+
+  .react_circle {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      z-index: -2;
+      left: -10%;
+      top: -20%;
+      border-radius: 20%;
+      background-color: #ff2e00;
+
+  }
+
+  #available {
+      font-weight: 900;
+      color: black;
+      font-size: 1.25rem;
+  }
+
+  .readmore {
+      border: 2px solid #ff5c00;
+      border-radius: 20px;
+      color: black;
+      text-decoration: wavy;
+      font-weight: 900;
+      padding: 10px;
+  }
+
+  .readmore a {
+      height: 30px;
+      background-color: #ff2e00;
+      margin-left: 5px;
+      padding: 5px 12px 5px 12px;
+      border-radius: 50%;
+      /* Adjusted border-radius */
+      color: white;
+      display: inline-block;
+      /* Added to ensure the animation works correctly */
+      text-decoration: none;
+      /* Remove underline on the link */
+      animation: readmore 1s infinite linear;
+  }
+
+  @keyframes readmore {
+      0% {
+          transform: translateY(0%);
+      }
+
+      50% {
+          transform: translateY(-5%);
+      }
+
+      100% {
+          transform: translateY(10%);
+      }
+  }
+
+  .fa-html5 {
+      position: absolute;
+      font-size: 4rem;
+      transform: rotate(-deg);
+      color: grey;
+      top: -40%;
+      left: -20%;
+  }
+
+  .fa-css3-alt {
+      position: absolute;
+      font-size: 4rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: 120%;
+      left: -10%;
+  }
+
+  .fa-react {
+      position: absolute;
+      font-size: 4rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: 40%;
+      left: -28%;
+  }
+
+  .fa-square-js {
+      position: absolute;
+      font-size: 5rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: -70%;
+      left: 30%;
+  }
+
+  .fa-node {
+      position: absolute;
+      font-size: 5rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: -60%;
+      right: 0%;
+  }
+
+  .fa-php {
+      position: absolute;
+      font-size: 5rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: 40%;
+      right: -28%;
+  }
+
+  .fa-database {
+      position: absolute;
+      font-size: 4rem;
+      transform: rotate(0deg);
+      color: grey;
+      top: 120%;
+      right: -10%;
+  }
+
+  .codewithdeepak {
+      position: absolute;
+      font-size: 1rem;
+      transform: rotate(90deg);
+      background-color: #9bd4d7;
+      padding: 10px;
+
+      color: white;
+      top: 20%;
+      right: -70%;
+  }
